@@ -3,14 +3,14 @@ import java.util.List;
 
 public class Canvas {
 
-	private List<Figure> figuren = new ArrayList<Figure>();
+	private List<Figure> figures = new ArrayList<Figure>();
 	
 	public void addFigure(Figure figure) {
-		this.figuren.add(figure);
+		this.figures.add(figure);
 	}
 	
 	public void print() {
-		for(Figure f : this.figuren) {
+		for(Figure f : this.figures) {
 			System.out.println(f.getColor() + ": " + f.getArea());
 		}
 	}
